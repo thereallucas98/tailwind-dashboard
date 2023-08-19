@@ -1,8 +1,7 @@
 'use client'
 
-import { useAutoAnimate } from '@formkit/auto-animate/react'
-
 import { useFileInput } from './Root'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 import { FileItem } from './FileItem'
 
 export function FileList() {
@@ -17,7 +16,7 @@ export function FileList() {
             key={file.name}
             name={file.name}
             size={file.size}
-            state="error"
+            state="complete"
           />
         )
       })}

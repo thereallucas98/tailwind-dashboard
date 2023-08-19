@@ -1,6 +1,6 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: 'class',
   content: ['./src/**/*.tsx'],
   theme: {
     extend: {
@@ -9,6 +9,7 @@ const config: Config = {
         profile: 'max-content 1fr max-content',
         form: 'minmax(7.5rem, 17.5rem) minmax(25rem, 1fr) minmax(0, 15rem)',
       },
+
       borderWidth: {
         6: '6px',
       },
@@ -32,6 +33,7 @@ const config: Config = {
           900: '#7A271A',
         },
       },
+
       maxWidth: {
         app: '700px',
       },
@@ -49,11 +51,10 @@ const config: Config = {
 
       animation: {
         slideDownAndFade:
-          'slideDownAndFade 1s cubic-bezier(0.16, 1, 0.3, 1)',
+          'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
         // slideUpAndFade: 'slideUpAndFade 1s linear',
       },
     },
   },
   plugins: [],
 }
-export default config

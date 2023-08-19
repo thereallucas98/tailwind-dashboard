@@ -8,7 +8,7 @@ import {
   useState,
 } from 'react'
 
-type RootProps = ComponentProps<'div'>
+export type RootProps = ComponentProps<'div'>
 
 type FileInputContextType = {
   id: string
